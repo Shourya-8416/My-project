@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Categories - BOOKS WEBSITE</title>
+    <style type="text/css">
+
+
+header{
+            position: absolute;
+            top: 0;left: 0;right: 0;
+            background: #fff;
+            padding: 2 rem 9%;
+            width: auto;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+            z-index: 1000;
+            
+            
+        }
+        .logo{
+            
+            color: black;
+            font-weight: bolder;
+
+        }
+        
+        .navbar{
+            background: black;
+            font-family: calibri;
+            padding-right: 25px;
+            padding-left: 25px;
+            width: 100%;
+            background-image: linear-gradient(#033747,#012733);
+            text-align:right;
+            position: absolute;
+        }
+        .navdiv{
+            display: flex;
+            text-align: right;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 50px; 
+        }
+        .logo a{
+            font-size: 40px;
+            font-weight: 600;
+            width: 100%;
+            text-align: right;
+        }
+        .navbar a{
+            font-size: 15px;
+            padding: 0 1.5rem;
+            color: white;
+            text-align: right;
+        }
+        .navbar a:hover{
+            color:yellow;
+
+        }
+        .navbar button {
+            width: 100px;
+            height: 40px; /* Adjust the height as per your preference */
+            border-radius: 5px;
+            border: none;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin:10px 0; /* Add negative margins to reduce height without affecting div size */
+        }
+
+        .navbar button a {
+           display: block;
+           padding: 5px 10px; /* Adjust the padding as per your preference */
+           color: white;
+           text-decoration: none;
+           line-height: 30px; /* Adjust the line-height to vertically center the text */
+        }
+
+        
+        .section{
+            padding: 2rem 9%;
+        }
+        .categories-heading {
+            text-align: center;
+            font-size: 4rem;
+            color: brown;
+            padding: 1rem;
+            margin: 2rem 0;
+            background: rgba(255, 51, 153, .05);
+            background-image: linear-gradient(#033747, #012733);
+            border-radius: 10px;
+        }
+
+        .category-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .category-box {
+            box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            position: relative;
+            transition: 0.3s;
+            overflow: hidden;
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .category-image {
+            position: relative;
+            text-align: center;
+            padding-top: 2rem;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+
+        .category-image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .category-name {
+            text-align: center;
+            padding: 10px;
+            background-color: #f9f9f9;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-top: 1px solid #ddd;
+        }
+
+        .category-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+        }
+        .footer{
+            color: black;
+            padding: 70px 0;
+            background-image:linear-gradient(#033747,#012733);
+        }
+        .footer-col{
+            width: 25%;
+            padding: 0 15px;
+        }
+        .footer-col h4{
+            font-size: 18px;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            color: white;
+        }
+        .footer-col ul li a{
+            color: white;
+        }
+        .footer-col ul li a:hover{
+            color: red;
+
+        }
+        .box h5:hover{
+            transform:scale(1.8);
+            z-index: 2;
+        }
+        .footer-col .social-links a{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            background-color: white;
+            color: black;
+        }
+        .footer a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Your header content here -->
+        <nav class="navbar">
+            <div class="navdiv">
+            <div class="logo"><a href="#"></a></div>
+             <a href="index12.html">Home</a>
+             
+             <a href="cart.html">Cart</a>
+             <a href="review.html">Review</a>
+             <a href="categories.html">Categories</a>
+               <button><a href="Login.html">Register/Login</a></button>
+                <form class="search-form" action="/search" method="GET">
+                    <input type="text" name="query" placeholder="Search books..." />
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <!-- Navbar content -->
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <!-- Home section content -->
+    </section>
+
+    <section class="Products" id="Products">
+        <!-- Featured Category section content -->
+    </section>
+
+    <section>
+        <!-- Biography Books section content -->
+    </section>
+
+     <section class="Categories" id="Categories">
+        <h1 class="categories-heading">Explore Categories</h1>
+        <div class="category-container">
+            <div class="category-box">
+                <div class="category-image">
+                    <img src="i1.jpeg" alt="Medical Books">
+                </div>
+                <div class="category-name">Medical</div>
+            </div>
+            <!-- Repeat the above block for each category -->
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="#">books@gmail.com</a>
+                        <li><a href="#">+123-456-7890</a>
+                        <li><a href="#">965418720</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a>
+                        <li><a href="#">Payment</a>
+                        <li><a href="#">return</a>
+                        <li><a href="#">Order Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                    
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    <hr/>
+             <center><a href="index12.html">Home</a> |
+             
+             <a href="cart.html">Cart</a> |
+             <a href="review">Review</a> |
+             <a href="contact">Categories</a> |
+             <a href="Login.html">Register/Login</a></center>
+             <hr/>
+    </footer>
+</body>
+</html>
